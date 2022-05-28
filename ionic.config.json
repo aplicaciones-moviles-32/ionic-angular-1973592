@@ -1,0 +1,7 @@
+{
+  "name": "InstaFeka",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
