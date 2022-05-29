@@ -1,7 +1,8 @@
 {
   "name": "InstaFeka",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

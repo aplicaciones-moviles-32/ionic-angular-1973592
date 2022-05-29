@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Publicar Post
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,34 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+
+    
+  
+    
+      <ion-col size="4">
+        Ubicacion
+      </ion-col>
+      <ion-col size="15">
+        <ion-input placeholder="Ubicacion" [(ngModel)]="Ubicacion" class="campo-texto"></ion-input>
+      </ion-col>
+      <ion-col size="4">
+        Descripcion:
+      </ion-col>
+      <ion-col size="15">
+        <ion-input placeholder="Escriba Aqui" [(ngModel)]="Descripcion" class="campo-texto"></ion-input>
+      </ion-col>
+    
+
+      
+      <ion-col size="12">
+        <ion-button (click)="camara()">Agregar Foto</ion-button>
+        <ion-button (click)="agregarPublicacion()">Agregar Publicacion</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  
 </ion-content>

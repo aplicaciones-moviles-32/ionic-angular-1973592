@@ -16,4 +16,11 @@ export class DbserviceService {
   getPublicacionesUsuario():any{
     return this.http.get('https://instafeka-d1299-default-rtdb.firebaseio.com/usuario/post.json');
   }
+  postFoto():any{
+    return this.http.post('https://instafeka-d1299-default-rtdb.firebaseio.com/publicaciones/.json',id);
+  }
 }
+function id(arg0: string, id: any): any {
+  throw new Error('Function not implemented.');
+}
+
