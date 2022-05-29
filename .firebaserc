@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "instafeka-d1299"
+  },
+  "targets": {
+    "instafeka-d1299": {
+      "hosting": {
+        "app": [
+          "instafeka-d1299"
+        ]
+      }
+    }
+  }
+}

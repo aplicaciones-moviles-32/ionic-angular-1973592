@@ -1,0 +1,19 @@
+<ion-grid> 
+  <ion-row>
+    <ion-col>
+        <ion-button fill="translucent" class="boton-grid" (click)="togglepublis('activo')"><ion-icon name="grid-outline"></ion-icon></ion-button>
+
+    </ion-col>
+    <ion-col>
+        <ion-button fill="translucent" class="boton-grid" (click)="togglepublis('descativado')"><ion-icon name="pricetag-outline"></ion-icon></ion-button>
+    </ion-col>
+</ion-row>
+  
+  <ion-row *ngIf=" estado ==='activo'"> 
+     <ion-col size="4"  *ngFor = "let pub of posts"> 
+       <ion-thumbnail class = "publicaciones">
+          <img src="{{pub.imagen}}" alt="">
+      </ion-thumbnail>
+      </ion-col>
+  </ion-row>
+</ion-grid>
